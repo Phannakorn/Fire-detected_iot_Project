@@ -21,7 +21,7 @@ void setup() {
      Serial.begin(115200);
      WiFi.begin(SSID, PASSWORD);
     Serial.printf("WiFi connecting to %s\n",  SSID);
-    while(WiFi.status() != WL_CONNECTED) { Serial.println("ไอหน้าหี"); delay(400); }
+    while(WiFi.status() != WL_CONNECTED) { Serial.println("Disconnect"); delay(400); }
     Serial.printf("\nWiFi connected\nIP : ");
     Serial.println(WiFi.localIP());
     LINE.setToken(LINE_TOKEN);
